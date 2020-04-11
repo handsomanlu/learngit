@@ -26,3 +26,11 @@ Conclusion:
 1.3 Show changes, check the working tree status, re-add/commit
 $ git diff <file>
 $ git status
+
+1.4 Version rolling back:
+$ git log --pretty=oneline: to show simple log
+$ git reflog: to show all the commit_id
+$ git reset --hard HEAD^: roll back to last version
+$ git reset --hard <commit_id>: roll back to the assigned commit_id version
+$ cat <file>: to show file contents
+
