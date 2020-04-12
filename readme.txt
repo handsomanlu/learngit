@@ -66,3 +66,6 @@ $ rm <file>: delete files in working area
 $ git rm <file>: delete files from working area and from index (stage).
  --> (1) $ git restore --staged <file>
      (2) $ git checkout -- <file>
+	 
+***Minemap: link to 'Git 3-area minemap.jpg'
+
