@@ -60,3 +60,9 @@ $ git reset --hard <commit_id>: roll back to the version of commit_id in both of
 $ git reset HEAD -- <file>: unstage file to working area!
 $ git checkout -- <file>: discard changes
 
+1.8 delete a file
+$ rm <file>: delete files in working area
+ --> un-delete: $ git checkout -- <file>
+$ git rm <file>: delete files from working area and from index (stage).
+ --> (1) $ git restore --staged <file>
+     (2) $ git checkout -- <file>
