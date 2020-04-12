@@ -43,10 +43,20 @@ $ git commit -m <message>: to commit file from stage to master
 $ git reset --hard HEAD^
 $ git reset --hard <commit_id>
 
+1.6 Verify difference
 Note: git commit是把file从stage放进master!!!!!
     git add <file> 是把file从working area放进stage!!!
 	而working area就是working directory，里面的file一改动存档后，file就变了。
 	可以用git diff HEAD -- <file> 去看看working area和master的版本差异。
+
+$ git diff: to verify the difference of between of file in between working area and stage.
 $ git diff HEAD -- <file>: to verify the difference of file in between working area and master.
 
-This is fault.!!!
+1.7. Roll back changes:
+$ git reset --hard HEAD^: roll back to last version for the file both in working area and master!
+    记得：是同时把工作区和版本库的版本都变回前一个版本了！
+$ git reset --hard <commit_id>: roll back to the version of commit_id in both of working area and master.
+    记得：是同时改动工作区和版本库的版本了！
+$ git reset HEAD -- <file>: unstage file to working area!
+$ git checkout -- <file>: discard changes
+
