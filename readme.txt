@@ -43,3 +43,10 @@ $ git commit -m <message>: to commit file from stage to master
 $ git reset --hard HEAD^
 $ git reset --hard <commit_id>
 
+Note: git commit是把file从stage放进master!!!!!
+    git add <file> 是把file从working area放进stage!!!
+	而working area就是working directory，里面的file一改动存档后，file就变了。
+	可以用git diff HEAD -- <file> 去看看working area和master的版本差异。
+$ git diff HEAD -- <file>: to verify the difference of file in between working area and master.
+
+This is fault.!!!
