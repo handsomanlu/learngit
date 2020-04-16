@@ -69,3 +69,10 @@ $ git rm <file>: delete files from working area and from index (stage).
 	 
 ***Minemap: link to 'Git 3-area minemap.jpg'
 
+1.9 分支管理
+git branch <branch_name>: create branch
+git checkout <branch_name>: change to branch_name
+git branch: show branch tree
+git merge <branch_name>: merge branch_name to current branch
+git branch -d <branch_name>: delete branch_name
+git checkout -b <branch_name>: build branch_name and then change to it
